@@ -1,6 +1,6 @@
-*{
+/**{
 	border:solid black 1px;
-}
+}*/
 
 img.profilePic {
 	height: 300px;
@@ -53,7 +53,7 @@ img {
 }
 
 a {
-	color: white;
+	color: purple;
 	text-decoration: none;
 
 }
