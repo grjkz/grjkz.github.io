@@ -3,22 +3,33 @@
 }*/
 
 img.profilePic {
-	height: 300px;
 	width: 300px;
+	border-radius: 25px;
+	border-style: ridge;
+	display:block;
 }
 body {
-	background: url(../img/bg.jpg);
+	margin: 0;
+	background: url(../img/light-wool-1920x1080.png);
 	background-size: cover;
 	background-attachment: fixed;
-	font-size: 24px;
 	font-family: georgia;
-	text-align: center;
 }
 header {
-	padding: 5px;
 	text-align: center;
-	background: radial-gradient(ellipse, rgba(0,0,0,0), rgba(0,0,0,0.5));
+	background: radial-gradient(ellipse, rgba(0,0,0,0), rgba(0,99,99,0.5));
+}
 
+header li {
+	display: inline;
+	margin: 0px 15px 0px 15px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+ul {
+	margin-bottom: 2em;
+	list-style-type: none;
 }
 
 .articles {
@@ -27,41 +38,61 @@ header {
 	width: 80%;
 	text-align: center;
 	margin: 0 auto;
-
 }
+
+article {
+	width:60%;
+}
+
+.contact {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+i {
+	font-size: 2em !important;
+}
+
 h1 {
-	color: #009999;
+	text-align: center;
+	/*color: #009999;*/
 }
 
 h2 {
-	color: #009999;
+	/*color: #009999;*/
 }
+
+h3 {
+	color: darkblue;
+	text-align: left;
+}
+
+.projects {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 p {
 
 }
 
-img {
-	margin: 20px;
-	border: 5px solid gray;
-}
-.inline {
-	display: inline;
-	margin: 0px 15px 0px 15px;
-	text-align: center;
-	font-size: 35px;
-	
+.center { 
+	margin-left: auto;
+	margin-right: auto;
 }
 
+.center-text {
+	text-align: center;
+}
 a {
 	color: purple;
 	text-decoration: none;
-
 }
 
 a:hover {
-	color: teal;
+	color: red;
 }
-
 
 .post-modal {
 	top: 50%;

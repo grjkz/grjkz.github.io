@@ -1,4 +1,6 @@
 $(function() {
+	$('.project-details').hide()
+
 	$('.project-name').click(function() {
 		if ($(this).next('.project-details').css('display') === "none") {
 			$('.project-details').slideUp()

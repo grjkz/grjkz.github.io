@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Blackjack by grjkz</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/blackjack.css">
+</head>
+
+
+<body class='small-12 columns'>
+	<h1>BLACKJACK</h1>
+
+	<div class='dealer'>
+		<img class='dealer-img' src="http://newsball.com/wp-content/uploads/2013/07/2071402-male_shadow.jpg" alt="Dealer">
+<!-- 		<div class='dealer-info'>
+			<p class='dealer-name'>Dealer</p>
+			<p class="dealer-total">Total
+				<p class='total-value'>21</p>
+			</p>
+		</div> -->
+	</div>
+
+	<div class='row largeRow'>
+		<div class='small-12 columns dealArea dealerHand'>Dealer's Cards</div>
+	</div>
+	<div class='row largeRow'>
+		<div class='small-12 small-centered columns comment'>Comments Area</div>
+	</div>
+	<div class='row largeRow'>	
+		<div class='small-6 columns dealArea playerHand'>Player's Cards
+		</div>
+			<div class="small-6 columns dealArea splitArea">Split Area
+			</div>
+	</div>
+
+
+<!-- 	<div class='row actions'>
+		
+		<p class='small-2 medium-4 columns bankWord'>Bank:</p>
+		<p class='bank'>1000</p>
+			
+		
+		<div class='actions'>
+			<button class='hit'>HIT</button>
+			<button class='stand'>STAND</button>
+			<button class='double'>Double</button>
+		</div>
+	</div> -->
+
+
+<div class="row">
+	<div class="small-10 small-push-2 columns actions">
+		<div class="small-3 columns">
+			<button class='hit'>Hit</button>
+		</div>
+		<div class="small-3 columns">
+			<button class='stand'>Stand</button>
+		</div>
+		<div class="small-3 columns">
+			<button class='double'>Double</button>
+		</div>
+		<div class="small-3 columns">
+			<button class='split'>Split</button>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<p class='small-1 column bankWord'>Bank:</p>
+	<p class='bank'>0</p>
+    <div class="small-5 columns">
+      <div class="row collapse prefix-radius">
+        <div class="small-3 columns">
+         <button class='prefix betButton'>Bet</button>
+        </div>
+        <div class="small-2 end columns">
+          <input class='small-1 medium-1 columns betAmt' type="text" placeholder='$$$'/>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+<div id="sitDown">
+	<div class='sitDownContent'>
+		<div class="header">
+			<h1 id="howMuch">How much money do you have?</h2>
+		</div>
+		<div class="body">
+			<p class="doYouHave">Enter the amount of money you are bringing to the table.</p>
+			<input class="submitBankAmt" placeholder="$"/>
+			<button class="submitBankroll">Sit Down</button>
+		</div>
+		<!-- <button class="closeModal">X</button> -->
+  </div>
+</div>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="javascripts/blackjack.js"></script>
+
+</html>
