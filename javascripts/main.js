@@ -9,7 +9,9 @@ $(function() {
 	 $('[href^=#]').click(function(e) {
 	 	e.preventDefault();
 	 	var href = this.href.split('/').pop();
-	 	console.log(href);
+	 	var targetSection = $(href);
+
+	 	targetSection.velocity('scroll', 400);
 	 });
 
 
