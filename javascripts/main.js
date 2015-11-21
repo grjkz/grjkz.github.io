@@ -15,7 +15,23 @@ $(function() {
 	 	targetSection.velocity('scroll', 400);
 	 });
 
+	/**
 
+	 * Flip Card for Profile Pic on click
+
+	*/
+	$('.card-flip').click(function() {
+		var card = $(this);
+		var cardFront = $('.card-front');
+		var cardBack = $('.card-back');
+
+		if (card.hasClass('flipped')) {
+			card.removeClass('flipped');
+		}
+		else {
+			card.addClass('flipped');			
+		}
+	});
 
 	/**
 	 

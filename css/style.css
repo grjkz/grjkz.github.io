@@ -135,9 +135,41 @@ header ul {
 
 img.profilePic {
 	width: 300px;
+	/*height: 336px;*/
 	border-radius: 25px;
-	border-style: ridge;
-	display:block;
+	/*border-style: ridge;*/
+	/*display:block;*/
+}
+
+.card-flip {
+	width: 300px;
+	height: 336px;
+	position: relative;
+}
+
+/*both images rotate when '.flipped' is added to '.card-flip'*/
+.card-flip.flipped .card-front {
+	transform: rotateY(180deg);
+}
+
+.card-flip.flipped .card-back {
+	transform: rotateY(0);
+}
+
+.card-front,
+.card-back {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: transform 0.5s;
+}
+
+.card-back {
+	transform: rotateY(180deg);
 }
 
 /** 
