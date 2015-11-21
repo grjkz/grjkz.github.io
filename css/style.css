@@ -1,5 +1,10 @@
+@font-face {
+	font-family: Nota;
+	font-weight: 600;
+	src: url("../fonts/Nota-BoldWeb.woff") format('woff');
+}
+
 * {
-	/*font-family: 'Raleway', sans-serif;*/
 	font-family: 'PT Sans', sans-serif;
 }
 
@@ -157,9 +162,7 @@ article {
  */
 
 .project {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+	
 }
 
 .project-name {
@@ -168,6 +171,9 @@ article {
 
 .project-details {
 	display: none;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .project-details .thumbnail, 
@@ -185,10 +191,14 @@ article {
 	width:100%;
 }
 
+.fresco-news * {
+	font-family: Nota, sans-serif;
+	font-size: 18px;
+}
 
 .ph4zergame * {
 	font-family: 'VT323', monospace;
-	font-size: 1.3em
+	font-size: 26em
 }
 
 .absurdnyc * {
