@@ -1,22 +1,40 @@
 $(function() {
-	$('.project-details').hide()
+	
 
+	/**
+	 
+	 * Smooth Scroll
+	 
+	 */
+	 $('[href^=#]').click(function(e) {
+	 	e.preventDefault();
+	 	var href = this.href.split('/').pop();
+	 	console.log(href);
+	 });
+
+
+
+	/**
+	 
+	 * Accordian for Projects Section
+	 
+	 */
+	
 	$('.project-name').click(function() {
-		if ($(this).next('.project-details').css('display') === "none") {
-			$('.project-details').slideUp()
-			$(this).next('.project-details').slideDown()
+		var targetProjectDetails = $(this).next('.project-details');
+		var allProjectDetails = $('.project-details');
+		
+		if (targetProjectDetails.css('display') === "none") {
+			allProjectDetails.velocity('slideUp', 200);
+			targetProjectDetails.velocity('slideDown', 200);
 		}
 		else {
-			$(this).next('.project-details').slideUp()	
+			targetProjectDetails.velocity('slideUp', 200);
 		}
-	})
-
-	// $('li a').click(function(e) {
-	// 	var target = this.hash
-	// 	var $target = $("a[name="+target+"]")
-	// 	console.log($target)
-	// })
+	});
 
 
 
-})
+
+
+});

@@ -7,6 +7,10 @@ html,body {
 	height:100%;
 }
 
+.clickable {
+	cursor: pointer;
+}
+
 body {
 	margin: 0;
 	background-color: #ffffff;
@@ -123,6 +127,10 @@ h3 {
 
 .project-name {
 	text-align: center;
+}
+
+.project-details {
+	display: none;
 }
 
 .project-details .thumbnail, .description {
