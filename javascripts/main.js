@@ -3,9 +3,10 @@ $(function() {
 
 	/**
 	 
-	 * Smooth Scroll
+	 * Nav Smooth Scroll
 	 
 	 */
+	
 	 $('[href^=#]').click(function(e) {
 	 	e.preventDefault();
 	 	var href = this.href.split('/').pop();
