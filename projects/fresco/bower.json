@@ -1,0 +1,18 @@
+{
+  "name": "Fresco",
+  "description": "development",
+  "main": "",
+  "authors": [
+    "Philip Choi <grjkz0@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fresconews/fresco-web",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,131 @@
+<div id="login">
+
+	<% include nav_modal %>
+
+	<div class='login-wrapper'>
+		
+<!-- LEFT SECTION OF PAGE -->
+		<div class="login-graphic">
+			
+			<img src="http://placekitten.com/1072/603" alt="">
+
+		</div>
+
+<!-- RIGHT SECTION OF PAGE -->
+		<div class="login-area">
+			
+			<!-- LOGIN CARD -->
+			<div id="login-card">
+	
+				<div class="login-tab tab-selected">
+					<p>Log In</p>
+					<a href="#forgotpassword"><i class='mdi mdi-help-circle'></i></a>
+				</div>
+
+				<div class="login-form">
+
+					<form action="" class="">
+						<div class="email-input">
+							<input type="text" placeholder='Email address' required>
+						</div>
+						<div class="password-input">
+							<input type="password" placeholder='Password' required>
+						</div>
+						<div class="login-button">
+							<a href="#">LOG IN</a>
+						</div>
+					</form>
+				</div>
+			
+			</div> <!-- .login-card -->
+
+			
+			<!-- TRYOUT CARD -->
+			<div id="tryout-card">
+
+				<div class="tryout-tab">
+					<p>Try out Fresco News</p>
+				</div>
+				
+				<div class="tryout-form">
+				
+					
+					<div class="tryout-main-form">
+
+						<!-- first section -->
+						<div class="outlet-header">
+							<h4>Outlet Info</h4>
+						</div>
+
+						<div class="outlet-name">
+							<input type="text" placeholder='Name'>
+						</div>
+
+						<div class="outlet-url">
+							<input type="text" placeholder='Website URL'>
+						</div>
+
+						<div class="outlet-primary">
+							<select name="" id="" required>
+								<option value="" selected default>Select One</option>
+								<option value="woops">Woops</option>
+								<option value="reverse">Other way around</option>
+							</select>
+						</div>
+
+						<div class="outlet-state">
+							<select name="" id="" required>
+								<option value="" selected default>Select State</option>
+								<option value="MD">MD</option>
+								<option value="NY">NY</option>
+							</select>
+						</div>
+					
+
+						<!-- second section -->
+						<div class="tryout-info">
+							<div>
+								<h4>Your info</h4>
+								<p>You’ll be the owner of this outlet, responsible for inviting members and managing payment information. We can transfer ownership if needed.</p>
+							</div>
+						</div>
+
+						<div class="tryout-name">
+							<input type="text" placeholder='Name'>
+						</div>
+
+						<div class="tryout-phone">
+							<input type="text" placeholder='Phone number'>
+						</div>
+
+						<div class="tryout-email">
+							<input type="text" placeholder='Email'>
+						</div>
+
+						<div class="tryout-pass">
+							<input type="password" placeholder='Password'>
+						</div>
+
+						<div class="tryout-start">
+							<input type="submit" value='START MY DEMO'>
+						</div>
+						
+					
+					</div> <!-- tryout form -->
+
+					<div class="tryout-agreement">
+						<p>By signing up, you agree to our <br>
+						<a href="#agreement">Hosted Services Agreement.</a></p>
+					</div>
+				
+
+				</div> <!-- tryout main -->
+					
+			</div> <!-- .tryout-card -->
+
+
+		</div>
+
+	</div>
+
+</div>

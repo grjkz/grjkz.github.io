@@ -1,0 +1,37 @@
+<div id="careers-view" class='modal'>
+
+	<div class="careers-section modal-content">
+		
+		<div id="careers-card" class='modal-card-l'>
+			
+			<div class="careers-header">
+				Work at Fresco
+				<a class='openModal' href="#landing"><i class="mdi mdi-window-close close-careersview-button"></i></a>
+			</div>
+
+			<div class="careers-tabs">
+				<div data-job-type='.full-time-positions' class="full-time-tab clickable selected-jobtab">
+					<div>FULL-TIME POSITIONS</div>
+				</div>
+
+		 		<div data-job-type='.internship-positions' class="internships-tab clickable">
+					<div>INTERNSHIPS</div>
+				</div>
+			</div> <!-- end careers-tabs -->
+			
+			<div class="job-lists">
+				<div class="full-time-positions selected-jobtype">
+					<% include fulltime_positions %>
+				</div>
+
+				<div class="internship-positions">
+					<% include internship_positions %>
+				</div>
+			</div>
+
+		</div>
+	
+
+	</div>
+
+</div>

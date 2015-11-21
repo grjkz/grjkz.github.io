@@ -2,304 +2,1261 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="assets/css/slick.css">
-	<link rel="stylesheet" href="assets/css/slick-theme.css">
-	<link rel="stylesheet" href="assets/css/stylesheet.css">
-	<title>Index.html</title>
+	<link rel="stylesheet" href="public/vendor/mdi/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="public/stylesheets/slick.css">
+	<link rel="stylesheet" href="public/stylesheets/slick-theme.css">
+	<link rel="stylesheet" href="public/stylesheets/index.css">
+	
+	<!--[if IE 8]>
+    <style>
+        nav {
+            top: 0;
+        }
+    </style>
+	<![endif]-->
+
+	<title>Fresco News</title>
 </head>
 <body>
 
-<div class="main">
 <!-- NAV SECTION -->
-	<nav>
-		<div class="nav-content">
+<nav id='main-nav'>
+	<div class="nav-content">
 		<div class="logo">
-			<img src="assets/imgs/wordmark-xs@2x.png" alt="Fresco">
-		</div>
-		<div class="links">
-			<ul>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#highlights">HIGHTLIGHTS</a></li>
-				<li>NEWS DASHBOARD</li>
-			</ul>
-		</div>
-		</div>
-	</nav>
-
-
-<div class='section'>
-	<!-- TOP SECTION -->
-	<div class="top">
-	<div id="header-content">
-		<div class="phrase">
-			<div class='Lfont'>THE WORLD NEEDS YOUR CAMERA</div>
-			<h2>Be on call with Fresco</h2>
-		</div>
-		<div class="download-icons">
-			<a href="#"><img src="assets/imgs/badge-ios@3x.png" alt="Apple Store"></a>
-			<a href="#"><img src="assets/imgs/badge-android@3x.png" alt="Android Store"></a>
+			<img src="public/images/wordmark-xs@2x.png" alt="Fresco">
+		</div><!--
+	--><div class="links">
+				<ul>
+					<li><a class='SS' href="#about">ABOUT</a></li>
+					<li><a class='SS'href="#highlights">HIGHTLIGHTS</a></li>
+					<li><a class='openModal' href="#login">NEWS DASHBOARD</a></li>
+				</ul>
 		</div>
 	</div>
-	</div>
-</div>
+</nav>
 
-<div class='section'>
-<!-- CARDS SECTION -->
-<!-- ABOUT -->
-	<div class="about">
-	<a name='#about'></a>
-	<div class='about-wrapper'>
-			<div class="invasive-line"></div>
-		<div class="steps">
-			<div class="step">
-				<div class="how-pic">
-					<img src="assets/imgs/timeline-1@2x.png" alt="Step 1">
-				</div>
-				<div class="line">
-					-----------
-				</div>
-				<div class="how-description">
-					GET CLOSE.
-				</div>
-			</div>
 
-			<div class="step">
-				<div class="how-pic uniq">
-					<img src="assets/imgs/timeline-2@2x.png" alt="Step 2">
-				</div>
-				<div class="line">
-					-----------
-				</div>
-				<div class="how-description">
-					GET THE SHOT.
-				</div>
-			</div>
-			
-			<div class="step">
-				<div class="how-pic">
-					<img src="assets/imgs/timeline-3@2x.png" alt="Step 3">
-					<img class='invasive-icon' src="assets/imgs/callout.png" alt="Icon">
-				</div>
-				<div class="line">
-					-----------
-				</div>
-				<div class="how-description">
-					GET PAID.
-				</div>
-			</div>
-		
-		</div>
-	
-		<div class="about-bottom">
-			<p>Fresco notifies you about nearby breaking news events when news outlets need photos and videos for their coverage. When a news outlet downloads or uses your photo or video, you get paid instantly!</p>
-		</div>
+<div id="landing-view">
 
-	</div>
-	</div>
-
-<!-- HIGHLIGHTS -->
-	<div class="cards">
-		<a name="#highlights"></a>
-		<div class='prev-article'>
-			<div class="arrow-left"> < </div>
-		</div>
-		<div class="articles">
-			<!-- first article -->
-			<div class="article">
+	<div id='section1' class='p-group'>
 				
-				<div class="carousel">
-					<div class="media">
-						<div class='image'>
-							<img src="http://placehold.it/400x500">
-							<div class="meta-data">
-								<div class="owner">
-									Owner
-								</div>
-								<div class="location">
-									Location
-								</div>
-								<div class="time">
-									Time
-								</div>
-							</div>
+			<!-- TOP SECTION -->
+			<div class="top">
+					<div id="header-content">
+						<div class="phrase">
+							<div class='title'>THE WORLD NEEDS YOUR CAMERA</div>
+							<h2 class='subtitle'>Be on call with Fresco</h2>
 						</div>
-						<div class='image'>
-							<img src="http://placehold.it/350x600">
-							<div class="meta-data">
-								<div class="owner">
-									Owner
-								</div>
-								<div class="location">
-									Location
-								</div>
-								<div class="time">
-									Time
-								</div>
-							</div>
+						<div class="download-icons">
+							<a class='download-ios' href="#"><img src="public/images/badge-ios@3x.png" alt="Apple Store"></a>
+							<a class='download-android' href="#"><img src="public/images/badge-android@3x.png" alt="Android Store"></a>
 						</div>
-						<div class='image'>
-							<img src="http://placehold.it/1000x300">
-							<div class="meta-data">
-								<div class="owner">
-									Owner
-								</div>
-								<div class="location">
-									Location
-								</div>
-								<div class="time">
-									Time
-								</div>
-							</div>
+					</div>			
+			</div>
+
+	</div>
+
+	<div id='section2' class='p-group'>
+
+		<!-- CARDS SECTION -->
+
+			<!-- ABOUT CARD-->
+			<div id="about" class="card">
+			<div class='about-wrapper'>
+				
+				<div class="steps">
+					<div class="step">
+						<div class="how-pic">
+							<img src="public/images/timeline-1@2x.png" alt="Step 1">
 						</div>
-						<div class='image'>
-							<img src="assets/imgs/1.jpg" alt="picture">
-							<div class="meta-data">
-								<div class="owner">
-									Owner
-								</div>
-								<div class="location">
-									Location
-								</div>
-								<div class="time">
-									Time
-								</div>
-							</div>
+						<div class="line-area">
+							<div class="line"></div>
+							<div class="circle"></div>
 						</div>
-						<div class='image'>
-							<img src="assets/imgs/2.jpg" alt="picture">
-							<div class="meta-data">
-								<div class="owner">
-									Owner
-								</div>
-								<div class="location">
-									Location
-								</div>
-								<div class="time">
-									Time
-								</div>
-							</div>
+						<div class="subtext">
+							GET CLOSE.
+						</div>
+					</div>
+
+					<div class="step">
+						<div class="how-pic how-pic2">
+							<img id='step2' class='uniq' src="public/images/timeline-2@2x.png" alt="Step 2">
+						</div>
+						<div class="line-area">
+							<div class="line"></div>
+							<div class="circle"></div>
+						</div>
+						<div class="subtext">
+							GET THE SHOT.
 						</div>
 					</div>
 					
-				</div>
-
-				<div class='read'>
-					<div class="description">
-						The 182nd annual Oktoberfest is underway at the Wiesn fairgrounds in Munich, Germany. The 16-day event kicked off on Saturday with major celebrations despite the looming refugee crisis. To many visitors' surprise, Oktoberfest, or Wiesn as it is locally known, is rather eco-friendly—with organic food, recycled water, glass and porcelain dish-ware, and renewable energy sources!
-					</div>
-					<div class="share">
-						<div class='share-buttons'>
-							<div class="copy-link">
-								<button data-index='0'><img src="" alt="">Copy Link</button>
-								<input data-index='0' type="text" value='copy this'>
-							</div>
-							<div class="twitter">
-								<a href="#"><img src="assets/imgs/twitter.png" alt="Twitter"></a>
-							</div>
-							<div class="facebook">
-								<a href="#"><img src="assets/imgs/facebook.png" alt="Facebook"></a>
-							</div>
+					<div class="step">
+						<div class="how-pic">
+							<img src="public/images/timeline-3@2x.png" alt="Step 3">
+							<img class='invasive-icon' src="public/images/callout.png" alt="Icon">
+						</div>
+						<div class="line-area">
+							<div class="line"></div>
+							<div class="circle"></div>
+						</div>
+						<div class="subtext">
+							GET PAID.
 						</div>
 					</div>
 				</div>
+			
+				<div class="about-bottom">
+					<p>Fresco notifies you about nearby breaking news events when news outlets need photos and videos for their coverage. When a news outlet downloads or uses your photo or video, you get paid instantly!</p>
+				</div>
+
 			</div>
+			</div>
+
+			<!-- HIGHLIGHTS CARD -->
+			<div id='highlights' class="card">
+				
+				<div class='prev-article'>
+					<div class="arrow-left"> <i class='mdi mdi-chevron-left'></i> </div>
+				</div><!--
+
+				--><div class="articles"></div><!--
+
+				--><div class='next-article'>
+						<div class="arrow-right"> <i class='mdi mdi-chevron-right'></i> </div>
+				</div>
+
+			</div>
+			<div class="mobile-switch"></div>
+
+
+			<!-- FOOTER SECTION-->
+			<footer>
+			<div class='footer-content'>
+				<div class="footer-l">
+					<div class="logo">
+						<img src="public/images/wordmark-xs@2x.png" alt="Fresco">
+					</div>
+					<div>
+						<ul>
+							<li>Fresco News Inc</li>
+							<li>85 Broad St #17 134</li>
+							<li>New York, NY 10004</li>
+						</ul>
+					</div>
+				</div>
+
+				
+				<div class="footer-c">
+					<ul>
+						<li>©2015 Fresco News Inc </li>
+						<li><a class='openModal' href="#tos">• Terms of Service</a> <a class='openModal' href="#tos">• Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="footer-r">
+					<div class='follow'>
+						<a href="#"><i class='mdi mdi-twitter twitter'></i></a>
+						<a href="#"><i class='mdi mdi-facebook-box facebook'></i></a>
+						<a href="#"><i class='mdi mdi-instagram instagram'></i></a>
+						<a href="#"><i class='mdi mdi-tumblr tumblr'></i></a>
+					</div>
+					<div>
+						<ul>
+							<li><a class='openModal' href="#team">TEAM</a></li>
+							<li><a class='openModal' href="#careers">CAREERS</a></li>
+							<li><a class='openModal' href="#press">PRESS</a></li>
+							<li><a class='openModal' href="#contact">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			</footer>
 		
-		<!-- second article -->
-			<div class="article">
-				
-				<div class="carousel">
-					<div class="media">
-						<div class='image'><img src="http://placehold.it/300x150"></div>
-						<div class='image'><img src="http://placehold.it/400x500"></div>
-						<!-- <div>THREE</div> -->
-						<!-- <div>FOUR</div> -->
-					</div>
-					<div class="meta-data">
-						<div class="owner">
-							
-						</div>
-						<div class="location">
-							
-						</div>
-						<div class="time">
-							
-						</div>
-					</div>
-				</div>
-				
 
-				<div class='read'>
-					<div class="description">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deserunt, est architecto voluptates id cum maiores sapiente corrupti mollitia voluptatibus. Delectus distinctio, cum accusamus ipsam, obcaecati odio reiciendis amet alias.
-					</div>
-					<div class="share">
-						<div class='share-buttons'>
-							<div class="copy-link">
-								<button data-index='1'><img src="" alt="">Copy Link</button>
-								<input data-index='1' type="text" value='copy this'>
-							</div>
-							<div class="twitter">
-								<a href="#"><img src="assets/imgs/twitter.png" alt="Twitter"></a>
-							</div>
-							<div class="facebook">
-								<a href="#"><img src="assets/imgs/facebook.png" alt="Facebook"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+	</div> <!-- section2 -->
+</div> <!-- landing view -->
 
-
-		</div>
-
-		<div class='next-article'>
-				<div class="arrow-right"> > </div>
-		</div>
-
-	</div>
-
-<!-- FOOTER SECTION-->
-	<footer>
-	<div class='footer-content'>
-		<div class="footer-l">
+<div id="modal-view">
+	<!-- NAV MODAL -->
+	<nav class="nav-modal">
+		<div class="nav-content">
 			<div class="logo">
-				<img src="assets/imgs/wordmark-xs@2x.png" alt="Fresco">
-			</div>
-			<div>
+				<img src="public/images/wordmark@2x.png" alt="Fresco">
+			</div><!--
+		--><div class="links">
+				
 				<ul>
-					<li>Fresco News Inc</li>
-					<li>85 Broad St #17 134</li>
-					<li>New York, NY 10004</li>
+					<li><a class='openModal' href="#landing">HOME</a></li>
+					<li><a class='openModal' href="#login">NEWS DASHBOARD</a></li>
 				</ul>
+
 			</div>
 		</div>
-		<div class="footer-c">
-			<span>©2015 Fresco News Inc • <a href="#">Terms of Service</a> • <a href="#"> Privacy Policy</a></span>
-		</div>
-		<div class="footer-r">
-			<div class='follow'>
-				<a href="#"><img src="assets/imgs/twitter.png" alt="Twitter"></a>
-				<a href="#"><img src="assets/imgs/facebook.png" alt="Facebook"></a>
-				<a href="#"><img src="assets/imgs/instagram.png" alt="Instagram"></a>
-				<a href="#"><img src="assets/imgs/tumblr.png" alt="Tumblr"></a>
+	</nav>
+<!-- END NAV MODAL -->
+<!-- #LOGIN-VIEW -->
+	<div id="login-view" class='modal'>
+		<div class="login-section modal-content">
+
+	<!-- LEFT SECTION OF VIEW -->
+			<div class="login-graphic">
+				<img src="http://placekitten.com/1072/603" alt="">
 			</div>
-			<div>
-				<ul>
-					<li>TEAM</li>
-					<li>CAREERS</li>
-					<li>PRESS</li>
-					<li>CONTACT</li>
-				</ul>
+
+		</div>
+
+	<!-- RIGHT SECTION OF VIEW -->
+		<div class="login-forms">
+			<div class="cell-clear">
+				<!-- LOGIN CARD -->
+				<div id="login-card">
+				
+					<div class="login-tab clickable">
+						<div>
+							Login
+							<a class='openModal' href="#reset-pass"><i class='mdi mdi-help-circle forgot-password-icon'></i></a>
+						</div>
+					</div>
+
+					<div class="login-form">
+						<form action="" class="">
+							<div class="email-input">
+								<input type="text" class="fresco-input-field" placeholder='Email address' required>
+							</div>
+							<div class="password-input">
+								<input type="password" class="fresco-input-field" placeholder='Password' required>
+							</div>
+							<div class="login-button">
+								<div id='login-button' class='button clickable'>LOG IN</div>
+							</div>
+						</form>
+					</div> <!-- login-form -->
+
+				</div> <!-- login-card -->
+
+				<!-- TRYOUT CARD -->
+				<div id="tryout-card">
+					
+					<div class="tryout-tab clickable tab-unselected">
+						<div>Try out Fresco News.</div>
+					</div>
+
+					<div class="tryout-form-full">
+						
+						<div class="tryout-form">
+							
+							<!-- first section -->
+							<div class="outlet-header">
+								<h4>Outlet Info</h4>
+							</div>
+
+							<div class="outlet-name">
+								<input type="text" id='tryout-outlet-name' class="fresco-input-field" placeholder='Name'>
+							</div>
+
+							<div class="outlet-url">
+								<input type="text" id='tryout-outlet-url' class="fresco-input-field" placeholder='Website URL'>
+							</div>
+
+							<div class="outlet-primary">
+								<select id="tryout-outlet-type" class='fresco-select-field' required>
+									<option value"" disabled selected>Outlet Type</option>
+									<option value="TV Station">TV Station</option>
+									<option value="Website">Website</option>
+									<option value="Newspaper">Newspaper</option>
+									<option value="Conglomerate">Conglomerate</option>
+									<option value="Investor">Investor</option>
+									<option value="Partner">Partner</option>
+									<option value="Press">Press</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+
+							<div class="outlet-state">
+								<select id="tryout-outlet-state" class='fresco-select-field' required>
+									<option value"" disabled selected>State</option>
+									<option value="AL">Alabama</option>
+									<option value="AK">Alaska</option>
+									<option value="AZ">Arizona</option>
+									<option value="AR">Arkansas</option>
+									<option value="CA">California</option>
+									<option value="CO">Colorado</option>
+									<option value="CT">Connecticut</option>
+									<option value="DE">Delaware</option>
+									<option value="DC">District Of Columbia</option>
+									<option value="FL">Florida</option>
+									<option value="GA">Georgia</option>
+									<option value="HI">Hawaii</option>
+									<option value="ID">Idaho</option>
+									<option value="IL">Illinois</option>
+									<option value="IN">Indiana</option>
+									<option value="IA">Iowa</option>
+									<option value="KS">Kansas</option>
+									<option value="KY">Kentucky</option>
+									<option value="LA">Louisiana</option>
+									<option value="ME">Maine</option>
+									<option value="MD">Maryland</option>
+									<option value="MA">Massachusetts</option>
+									<option value="MI">Michigan</option>
+									<option value="MN">Minnesota</option>
+									<option value="MS">Mississippi</option>
+									<option value="MO">Missouri</option>
+									<option value="MT">Montana</option>
+									<option value="NE">Nebraska</option>
+									<option value="NV">Nevada</option>
+									<option value="NH">New Hampshire</option>
+									<option value="NJ">New Jersey</option>
+									<option value="NM">New Mexico</option>
+									<option value="NY">New York</option>
+									<option value="NC">North Carolina</option>
+									<option value="ND">North Dakota</option>
+									<option value="OH">Ohio</option>
+									<option value="OK">Oklahoma</option>
+									<option value="OR">Oregon</option>
+									<option value="PA">Pennsylvania</option>
+									<option value="RI">Rhode Island</option>
+									<option value="SC">South Carolina</option>
+									<option value="SD">South Dakota</option>
+									<option value="TN">Tennessee</option>
+									<option value="TX">Texas</option>
+									<option value="UT">Utah</option>
+									<option value="VT">Vermont</option>
+									<option value="VA">Virginia</option>
+									<option value="WA">Washington</option>
+									<option value="WV">West Virginia</option>
+									<option value="WI">Wisconsin</option>
+									<option value="WY">Wyoming</option>
+								</select>
+							</div>
+
+							<!-- second section -->
+							<div class="tryout-info">
+								<div>Your info</div>
+								<p>You’ll be the owner of this outlet, responsible for inviting members and managing payment information. We can transfer ownership if needed.</p>
+							</div>
+
+							<div class="tryout-name">
+								<input type="text" id='tryout-name' class="fresco-input-field" placeholder='Name'>
+							</div>
+
+							<div class="tryout-phone">
+								<input type="text" id='tryout-phone' class="fresco-input-field" placeholder='Phone number'>
+							</div>
+
+							<div class="tryout-email">
+								<input type="text" id='tryout-email' class="fresco-input-field" placeholder='Email'>
+							</div>
+
+							<div class="tryout-pass">
+								<input type="password" id='tryout-pass' class="fresco-input-field" placeholder='Password'>
+							</div>
+
+							<div class="tryout-button">
+								<div id='start-demo-button' class='button clickable'>START MY DEMO</div>
+							</div>
+											
+						</div> <!-- tryout form -->
+
+						<div class="tryout-agreement">
+							<p>By signing up, you agree to our <br>
+							<a href="#hsa" class='openModal'>Hosted Services Agreement.</a></p>
+						</div>
+					</div> <!-- tryout form full -->
+				</div>
 			</div>
 		</div>
 	</div>
-	</footer>
+<!-- END #LOGIN-VIEW -->
 
-</div>
-	
-</div>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="assets/js/slick.js"></script>
-	<script src="assets/js/main.js"></script>
+
+<!-- #RESET-VIEW -->
+	<div id="reset-pass-view" class='modal'>
+		<div class="reset-pass-section modal-content">
+			<div id="reset-pass-card">
+				<div class="reset-pass-header">
+					Forgot your password?
+				</div>
+				<div class="reset-pass-email">
+					<input id='reset-password-email' class='fresco-input-field' type="text" placeholder='Email adddress'>
+				</div>
+				<div class="reset-pass-button clickable">
+					SEND RECOVERY LINK
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END #RESET-VIEW -->
+
+
+<!-- #TEAM-VIEW -->
+	<div id="team-view" class='modal'>
+
+		<div class='team-section modal-content'>
+			
+			<div id="team-card" class='modal-card-l'>
+				
+				<div class="team-header">
+					Team
+					<a class='openModal' href="#landing"><i class="mdi mdi-window-close close-teamview-button"></i></a>
+				</div>
+				
+				<div class="team-members">					
+
+					<div class="team-pic">
+						<img src="http://placekitten.com/700/400">
+					</div>
+
+					<div class="team-details">
+						
+						<table>  <!-- parent table: all info goes in here -->
+							
+							<tr> <!-- one row of 3 members -->
+
+								<td class='single-team-member'> <!-- one member goes in here -->
+									<table class='member-details'>  <!-- one table per member -->
+										<tr>
+											<td rowspan=3 class='member-avatar'> <!-- avatar -->
+												<div class='fresco-circle'>
+													<img src="http://placehold.it/100x100"> 
+												</div>
+											</td>
+											<td class='member-name'>	<!-- name -->
+												John Meyer
+											</td>
+										</tr>
+										<tr>
+											<td class='member-position'>
+												Chief Executive Officer
+											</td>
+										</tr>
+										<tr>
+											<td class='member-handle'>
+												@beastmode
+											</td>
+										</tr>
+									</table>
+								</td> <!-- end member 1 -->
+
+								<td class='single-team-member'>
+									<table class='member-details'>
+										<tr>
+											<td rowspan=3 class='member-avatar'>
+												<div class='fresco-circle'>
+													<img src="http://placehold.it/80x80">
+												</div>
+											</td>
+											<td class='member-name'>
+												Jeremy Ogorek
+											</td>
+										</tr>
+										<tr>
+											<td class='member-position'>
+												Chief Financial Officer
+											</td>
+										</tr>
+										<tr>
+											<td class='member-handle'>
+												@jeremyogo
+											</td>
+										</tr>
+									</table>
+								</td> <!-- end member 2 -->
+
+								<td class="single-team-member">
+									<table class='member-details'>
+										<tr>
+											<td rowspan=3 class='member-avatar'>
+												<div class='fresco-circle'>
+													<img src="http://placehold.it/80x80">
+												</div>
+											</td>
+											<td class='member-name'>
+												Kyle Marimon
+											</td>
+										</tr>
+										<tr>
+											<td class='member-position'>
+												Partner Relations
+											</td>
+										</tr>
+										<tr>
+											<td class='member-handle'>
+												@KyleMarimon
+											</td>
+										</tr>
+									</table>
+								</td> <!-- end member 3 -->
+
+							</tr> <!-- end first row -->
+
+							<tr>
+								<td class='team-dept'>
+									Design
+								</td>
+							</tr>  <!-- end second row -->
+
+							<tr> <!-- one row of 3 members -->
+
+								<td class='single-team-member'>
+									<table class='member-details'>
+										<tr>
+											<td rowspan=3 class='member-avatar'>
+												<div class='fresco-circle'>
+													<img src="http://placehold.it/80x80">
+												</div>
+											</td>
+											<td class='member-name'>
+												Imogen Olsen
+											</td>
+										</tr>
+										<tr>
+											<td class='member-position'>
+												Chief Design Officer
+											</td>
+										</tr>
+										<tr>
+											<td class='member-handle'>
+												@imogenic
+											</td>
+										</tr>
+									</table>
+								</td> <!-- end member 1 -->
+
+								<td class='single-team-member'>
+									<table class='member-details'>
+										<tr>
+											<td rowspan=3 class='member-avatar'>
+												<div class='fresco-circle'>
+													<img src="http://placehold.it/80x80">
+												</div>
+											</td>
+											<td class='member-name'>
+												Erik Washington
+											</td>
+										</tr>
+										<tr>
+											<td class='member-position'>
+												Graphic Designer
+											</td>
+										</tr>
+										<tr>
+											<td class='member-handle'>
+												@NYCWashington
+											</td>
+										</tr>
+									</table>
+								</td> <!-- end member 2 -->
+							</tr> <!-- end third row -->
+						</table>  <!-- end parent table -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END #TEAM-VIEW -->
+
+
+<!-- #CAREERS-VIEW -->
+	<div id="careers-view" class='modal'>
+
+		<div class="careers-section modal-content">
+			
+			<div id="careers-card" class='modal-card-l'>
+				
+				<div class="careers-header">
+					Work at Fresco
+					<a class='openModal' href="#landing"><i class="mdi mdi-window-close close-careersview-button"></i></a>
+				</div>
+
+				<div class="careers-tabs">
+					<div data-job-type='.full-time-positions' class="full-time-tab clickable selected-jobtab">
+						<div>FULL-TIME POSITIONS</div>
+					</div>
+
+			 		<div data-job-type='.internship-positions' class="internships-tab clickable">
+						<div>INTERNSHIPS</div>
+					</div>
+				</div> <!-- end careers-tabs -->
+				
+				<div class="job-lists">
+					<!-- FULL TIME POSITIONS -->
+					<div class="full-time-positions selected-jobtype">
+						<div class="position">
+							<div class="job-title">
+								Full-time Positions
+							</div>
+
+							<div class="job-summary">
+								Cat snacks favor packaging over toy and nap all day destroy couch but hate dog chew iPad power cord or leave fur on owners clothes rub face on everything. Under the bed attack feet or run in circles purr for no reason but stick butt in face play time but use lap as chair shake treat bag.
+							</div>
+
+							<div class="job-details">
+								<div class="job-doing">
+									What you'll be doing
+									<ul>
+										<li>This Thing</li>
+										<li>Another thing</li>
+										<li>That thing</li>
+									</ul>	
+								</div>
+								<div class="job-knowhow">
+									What you should know
+									<ul>
+										<li>How to Fresco</li>
+										<li>Words</li>
+										<li>Trivia</li>
+									</ul>
+								</div>
+								<div class="job-misc">
+									Misc
+									<ul>
+										<li>Grundle</li>
+										<li>Gringus</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="job-submit-cv">
+								If you're interested, <a href="mailto:dummy@abc.com">send us your CV here.</a>
+							</div>
+						</div>
+
+						<div class="position">
+							<div class="job-title">
+								Dummy Text Author
+							</div>
+
+							<div class="job-summary">
+								Cat snacks favor packaging over toy and nap all day destroy couch but hate dog chew iPad power cord or leave fur on owners clothes rub face on everything. Under the bed attack feet or run in circles purr for no reason but stick butt in face play time but use lap as chair shake treat bag.
+							</div>
+
+							<div class="job-details">
+								<div class="job-doing">
+									What you'll be doing
+									<ul>
+										<li>This Thing</li>
+										<li>Another thing</li>
+										<li>That thing</li>
+									</ul>	
+								</div>
+								<div class="job-knowhow">
+									What you should know
+									<ul>
+										<li>AP Style</li>
+										<li>Good pizza spots</li>
+										<li>Haskell</li>
+									</ul>
+								</div>
+								<div class="job-misc">
+									Misc
+									<ul>
+										<li>Grundle</li>
+										<li>Gringus</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="job-submit-cv">
+								If you're interested, <a href="mailto:dummy@abc.com">send us your CV here.</a>
+							</div>
+						</div>
+
+						<div class="position">
+							<div class="job-title">
+								Dummy Text Author
+							</div>
+
+							<div class="job-summary">
+								Cat snacks favor packaging over toy and nap all day destroy couch but hate dog chew iPad power cord or leave fur on owners clothes rub face on everything. Under the bed attack feet or run in circles purr for no reason but stick butt in face play time but use lap as chair shake treat bag.
+							</div>
+
+							<div class="job-details">
+								<div class="job-doing">
+									What you'll be doing
+									<ul>
+										<li>This Thing</li>
+										<li>Another thing</li>
+										<li>That thing</li>
+									</ul>	
+								</div>
+								<div class="job-knowhow">
+									What you should know
+									<ul>
+										<li>AP Style</li>
+										<li>Good pizza spots</li>
+										<li>Haskell</li>
+									</ul>
+								</div>
+								<div class="job-misc">
+									Misc
+									<ul>
+										<li>Grundle</li>
+										<li>Gringus</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="job-submit-cv">
+								If you're interested, <a href="mailto:dummy@abc.com">send us your CV here.</a>
+							</div>
+						</div>
+
+						<div class="position">
+							<div class="job-title">
+								Dummy Text Author
+							</div>
+
+							<div class="job-summary">
+								Cat snacks favor packaging over toy and nap all day destroy couch but hate dog chew iPad power cord or leave fur on owners clothes rub face on everything. Under the bed attack feet or run in circles purr for no reason but stick butt in face play time but use lap as chair shake treat bag.
+							</div>
+
+							<div class="job-details">
+								<div class="job-doing">
+									What you'll be doing
+									<ul>
+										<li>This Thing</li>
+										<li>Another thing</li>
+										<li>That thing</li>
+									</ul>	
+								</div>
+								<div class="job-knowhow">
+									What you should know
+									<ul>
+										<li>AP Style</li>
+										<li>Good pizza spots</li>
+										<li>Haskell</li>
+									</ul>
+								</div>
+								<div class="job-misc">
+									Misc
+									<ul>
+										<li>Grundle</li>
+										<li>Gringus</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="job-submit-cv">
+								If you're interested, <a href="mailto:dummy@abc.com">send us your CV here.</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- INTERNSHIP POSITIONS -->
+					<div class="internship-positions">
+						<div class="position">
+							<div class="job-title">
+								Internship List
+							</div>
+
+							<div class="job-summary">
+								Cat snacks favor packaging over toy and nap all day destroy couch but hate dog chew iPad power cord or leave fur on owners clothes rub face on everything. Under the bed attack feet or run in circles purr for no reason but stick butt in face play time but use lap as chair shake treat bag.
+							</div>
+
+							<div class="job-details">
+								<div class="job-doing">
+									What you'll be doing
+									<ul>
+										<li>This Thing</li>
+										<li>Another thing</li>
+										<li>That thing</li>
+									</ul>	
+								</div>
+								<div class="job-knowhow">
+									What you should know
+									<ul>
+										<li>How to Fresco</li>
+										<li>Words</li>
+										<li>Trivia</li>
+									</ul>
+								</div>
+								<div class="job-misc">
+									Misc
+									<ul>
+										<li>Grundle</li>
+										<li>Gringus</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="job-submit-cv">
+								If you're interested, <a href="mailto:dummy@abc.com">send us your CV here.</a>
+							</div>
+						</div>
+
+						<div class="position">
+							<div class="job-title">
+								Dummy Text Author
+							</div>
+
+							<div class="job-summary">
+								Cat snacks favor packaging over toy and nap all day destroy couch but hate dog chew iPad power cord or leave fur on owners clothes rub face on everything. Under the bed attack feet or run in circles purr for no reason but stick butt in face play time but use lap as chair shake treat bag.
+							</div>
+
+							<div class="job-details">
+								<div class="job-doing">
+									What you'll be doing
+									<ul>
+										<li>This Thing</li>
+										<li>Another thing</li>
+										<li>That thing</li>
+									</ul>	
+								</div>
+								<div class="job-knowhow">
+									What you should know
+									<ul>
+										<li>AP Style</li>
+										<li>Good pizza spots</li>
+										<li>Haskell</li>
+									</ul>
+								</div>
+								<div class="job-misc">
+									Misc
+									<ul>
+										<li>Grundle</li>
+										<li>Gringus</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="job-submit-cv">
+								If you're interested, <a href="mailto:dummy@abc.com">send us your CV here.</a>
+							</div>
+						</div>
+
+						<div class="position">
+							<div class="job-title">
+								Dummy Text Author
+							</div>
+
+							<div class="job-summary">
+								Cat snacks favor packaging over toy and nap all day destroy couch but hate dog chew iPad power cord or leave fur on owners clothes rub face on everything. Under the bed attack feet or run in circles purr for no reason but stick butt in face play time but use lap as chair shake treat bag.
+							</div>
+
+							<div class="job-details">
+								<div class="job-doing">
+									What you'll be doing
+									<ul>
+										<li>This Thing</li>
+										<li>Another thing</li>
+										<li>That thing</li>
+									</ul>	
+								</div>
+								<div class="job-knowhow">
+									What you should know
+									<ul>
+										<li>AP Style</li>
+										<li>Good pizza spots</li>
+										<li>Haskell</li>
+									</ul>
+								</div>
+								<div class="job-misc">
+									Misc
+									<ul>
+										<li>Grundle</li>
+										<li>Gringus</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="job-submit-cv">
+								If you're interested, <a href="mailto:dummy@abc.com">send us your CV here.</a>
+							</div>
+						</div>
+
+						<div class="position">
+							<div class="job-title">
+								Dummy Text Author
+							</div>
+
+							<div class="job-summary">
+								Cat snacks favor packaging over toy and nap all day destroy couch but hate dog chew iPad power cord or leave fur on owners clothes rub face on everything. Under the bed attack feet or run in circles purr for no reason but stick butt in face play time but use lap as chair shake treat bag.
+							</div>
+
+							<div class="job-details">
+								<div class="job-doing">
+									What you'll be doing
+									<ul>
+										<li>This Thing</li>
+										<li>Another thing</li>
+										<li>That thing</li>
+									</ul>	
+								</div>
+								<div class="job-knowhow">
+									What you should know
+									<ul>
+										<li>AP Style</li>
+										<li>Good pizza spots</li>
+										<li>Haskell</li>
+									</ul>
+								</div>
+								<div class="job-misc">
+									Misc
+									<ul>
+										<li>Grundle</li>
+										<li>Gringus</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="job-submit-cv">
+								If you're interested, <a href="mailto:dummy@abc.com">send us your CV here.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END #CAREERS-VIEW -->
+
+
+<!-- #PRESS-VIEW -->
+		<div id="press-view" class='modal'>
+		
+		<div class="press-section modal-content">
+			
+			<div id="press-card" class='modal-card-l'>
+				
+				<div class="press-header">
+					Fresco in the News
+					<a class='openModal' href="#landing"><i class="mdi mdi-window-close close-pressview-button"></i></a>
+				</div>
+				
+				<div class="press-articles">
+					
+					<div class="press-article">
+						
+						<div class="press-article-avatar fresco-circle">
+							
+						</div>
+						
+						<div class="press-article-details">
+
+						<div class="press-article-details-wrapper">
+
+							<div class="press-article-header">
+								Fresco News Raises $1.2 Million to Help Media Crowdsource Videos, Photos
+							</div>
+							<div class="press-article-byline">
+								Lora Kolodny • Wall Street Journal
+							</div>
+							<div class="press-article-summary-wrapper">
+								<div class="vertical-bar"></div>
+								<div class="press-article-summary">
+									Fresco’s seed investors include Reese Schonfeld, a co-founder of CNN and the Food Network; former Yahoo CEO Ross Levinsohn; former AOL Chief Executive Jon Miller; Michael Jones, former Myspace CEO and currently CEO of Science Inc.; and Mediabistro founder Laurel Touby. Other investors are early-stage funds Fresco Capital, 1517 Fund, Social Starts and others.
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="press-article">
+						
+						<div class="press-article-avatar fresco-circle">
+							
+						</div>
+						
+						<div class="press-article-details">
+
+						<div class="press-article-details-wrapper">
+
+							<div class="press-article-header">
+								Fresco News Raises $1.2 Million to Help Media Crowdsource Videos, Photos
+							</div>
+							<div class="press-article-byline">
+								Lora Kolodny • Wall Street Journal
+							</div>
+							<div class="press-article-summary-wrapper">
+								<div class="vertical-bar"></div>
+								<div class="press-article-summary">
+									Fresco’s seed investors include Reese Schonfeld, a co-founder of CNN and the Food Network; former Yahoo CEO Ross Levinsohn; former AOL Chief Executive Jon Miller; Michael Jones, former Myspace CEO and currently CEO of Science Inc.; and Mediabistro founder Laurel Touby. Other investors are early-stage funds Fresco Capital, 1517 Fund, Social Starts and others.
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="press-article">
+						
+						<div class="press-article-avatar fresco-circle">
+							
+						</div>
+						
+						<div class="press-article-details">
+
+						<div class="press-article-details-wrapper">
+
+							<div class="press-article-header">
+								Fresco News Raises $1.2 Million to Help Media Crowdsource Videos, Photos
+							</div>
+							<div class="press-article-byline">
+								Lora Kolodny • Wall Street Journal
+							</div>
+							<div class="press-article-summary-wrapper">
+								<div class="vertical-bar"></div>
+								<div class="press-article-summary">
+									Fresco’s seed investors include Reese Schonfeld, a co-founder of CNN and the Food Network; former Yahoo CEO Ross Levinsohn; former AOL Chief Executive Jon Miller; Michael Jones, former Myspace CEO and currently CEO of Science Inc.; and Mediabistro founder Laurel Touby. Other investors are early-stage funds Fresco Capital, 1517 Fund, Social Starts and others.
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="press-article">
+						
+						<div class="press-article-avatar fresco-circle">
+							
+						</div>
+						
+						<div class="press-article-details">
+
+						<div class="press-article-details-wrapper">
+
+							<div class="press-article-header">
+								Fresco News Raises $1.2 Million to Help Media Crowdsource Videos, Photos
+							</div>
+							<div class="press-article-byline">
+								Lora Kolodny • Wall Street Journal
+							</div>
+							<div class="press-article-summary-wrapper">
+								<div class="vertical-bar"></div>
+								<div class="press-article-summary">
+									Fresco’s seed investors include Reese Schonfeld, a co-founder of CNN and the Food Network; former Yahoo CEO Ross Levinsohn; former AOL Chief Executive Jon Miller; Michael Jones, former Myspace CEO and currently CEO of Science Inc.; and Mediabistro founder Laurel Touby. Other investors are early-stage funds Fresco Capital, 1517 Fund, Social Starts and others.
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="press-article">
+						
+						<div class="press-article-avatar fresco-circle">
+							
+						</div>
+						
+						<div class="press-article-details">
+
+						<div class="press-article-details-wrapper">
+
+							<div class="press-article-header">
+								Fresco News Raises $1.2 Million to Help Media Crowdsource Videos, Photos
+							</div>
+							<div class="press-article-byline">
+								Lora Kolodny • Wall Street Journal
+							</div>
+							<div class="press-article-summary-wrapper">
+								<div class="vertical-bar"></div>
+								<div class="press-article-summary">
+									Fresco’s seed investors include Reese Schonfeld, a co-founder of CNN and the Food Network; former Yahoo CEO Ross Levinsohn; former AOL Chief Executive Jon Miller; Michael Jones, former Myspace CEO and currently CEO of Science Inc.; and Mediabistro founder Laurel Touby. Other investors are early-stage funds Fresco Capital, 1517 Fund, Social Starts and others.
+								</div>
+							</div>
+
+						</div>
+						</div>
+					</div>
+
+					<div class="press-article">
+						
+						<div class="press-article-avatar fresco-circle">
+							
+						</div>
+						
+						<div class="press-article-details">
+
+						<div class="press-article-details-wrapper">
+
+							<div class="press-article-header">
+								Fresco News Raises $1.2 Million to Help Media Crowdsource Videos, Photos
+							</div>
+							<div class="press-article-byline">
+								Lora Kolodny • Wall Street Journal
+							</div>
+							<div class="press-article-summary-wrapper">
+								<div class="vertical-bar"></div>
+								<div class="press-article-summary">
+									Fresco’s seed investors include Reese Schonfeld, a co-founder of CNN and the Food Network; former Yahoo CEO Ross Levinsohn; former AOL Chief Executive Jon Miller; Michael Jones, former Myspace CEO and currently CEO of Science Inc.; and Mediabistro founder Laurel Touby. Other investors are early-stage funds Fresco Capital, 1517 Fund, Social Starts and others.
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="press-kit">
+					<div class="press-kit-google-drive">
+						<i class="mdi mdi-google-drive"><span>FULL PRESS KIT</span></i>
+					</div>
+					<div class="press-kit-download">
+						<i class="mdi mdi-download"><span>PRESS KIT PDF</span></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END #PRESS-VIEW -->
+
+
+<!-- #CONTACT-VIEW -->
+	<div id="contact-view" class='modal'>
+
+		<div class="contact-section modal-content">
+			
+			<div id="contact-card">
+				
+				<div class="contact-header">
+					Get in touch
+					<a class='openModal' href="#landing"><i class="mdi mdi-window-close close-contactview-button"></i></a>
+				</div>
+
+				<div class="contact-form">
+					
+					<div class="contact-name">
+						<input id='contact-form-name' class="fresco-input-field" type="text" placeholder='Name' required>
+					</div>
+
+					<div class="contact-email">
+						<input id='contact-form-email' class="fresco-input-field" type="text" placeholder='Email' required>
+					</div>
+
+					<div class="contact-inquiry">
+						<select id="contact-form-inquiry" class="fresco-select-field">
+							<option value="" disabled selected>Type of Inquiry</option>
+							<option value="Help">Help</option>
+							<option value="Feedback">Feedback</option>
+							<option value="Partnership">Partnership</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+
+					<div class="contact-message">
+						<textarea name="" id="contact-form-message" rows="5" placeholder='Message'></textarea>
+					</div>
+					
+					<div class="contact-submit-button">
+						<a id='contact-send-email' href="" data-contact-email='info@fresconews'>SEND MY MESSAGE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END #CONTACT-VIEW -->
+
+
+<!-- #TOS-VIEW -->
+	<div id="tos-view" class='modal'>
+
+		<div class="tos-section modal-content">
+			
+			<div id="tos-card">
+				
+				<div class="tos-tabs">
+					<div data-tab-target='.terms-of-service' class="terms-tab selected-tab tab clickable">TERMS OF SERVICE</div>
+					<div data-tab-target='.privacy-policy' class="privacy-tab tab clickable">PRIVACY POLICY</div>
+					<a class='openModal' href="#landing"><i class="mdi mdi-window-close close-tosview-button"></i></a>
+				</div>
+
+				<div class="tos-body">
+				<!-- MAKE SURE THERE ISN'T ANY SPACE BETWEEN THE <p> AND THE FIRST CHARACTER!!! -->
+					<div class="terms-of-service selected-details">
+						<p>This website, computing application, and the data, services, information, tools, functionality, updates and similar materials delivered or provided thereby (collectively, the “Service”) are supplied by Fresco News, Inc. (“Fresco”, “us” or “we”) subject to your agreement to and compliance with the conditions set forth in this Terms and Conditions Agreement (the “Agreement”). By creating an account to use the Service or otherwise entering into this Agreement, you are creating a binding contract with us. We may revise or update this Agreement by posting an amended version through the Service and making you aware of the revisions. Your use of the Service following an update to this Agreement (or other acceptance method) is considered acceptance of the updated Agreement. If you do not accept the changes, you must stop using the Service.
+					
+						LICENSE
+						
+						As long as you are in compliance with the conditions of this Agreement and all incorporated documents, we hereby grant you a limited, revocable, non-assignable, non-transferrable, non-sublicensable, non-commercial, non-exclusive license to use and access the Service only on your computing device for personal use. No rights not explicitly listed are granted.
+
+						INCORPORATED TERMS
+
+						The following additional terms are incorporated into this Agreement as if fully set forth herein:
+						1. Privacy Policy
+						2. Copyright Policy
+						3. Complaint Policy (including Privacy and Trademark)
+
+						DISCLAIMERS
+
+						The Service allows its users and third-parties to post content and materials, which we do not review, control or endorse. You agree that we are not responsible for any content, advice or other materials appearing on or through the Service. We do not investigate or perform background checks on users of the Services. It is up to you to ensure your own safety in your interactions with other users of the Services and in your activities conducted in connection with the Service. Some users may request that you engage in certain activities, and if you choose to do so, such activities are at your absolute sole risk. You understand and agree that we are not responsible for any damage, injury, death or harm you may suffer as a result of your activities in response to solicitations on the Service.</p>
+					</div>
+
+					<div class="privacy-policy">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!
+
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt debitis quae ullam blanditiis assumenda accusantium facere natus, nulla rem recusandae cupiditate beatae facilis neque corporis dolorem maiores repellendus quam!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END #TOS-VIEW -->
+
+
+<!-- #HSA-VIEW -->
+	<div id="hsa-view" class='modal'>
+		<div class="hsa-section modal-content">
+			
+			<div id="hsa-card">
+				
+				<div class="hsa-header">
+					Hosted Services Agreement
+					<a class='openModal' href="#landing"><i class="mdi mdi-window-close close-hsaview-button"></i></a>
+				</div>
+				
+				<div class="hsa-body">
+					<p>This website, computing application, and the data, services, information, tools, functionality, updates and similar materials delivered or provided thereby (collectively, the “Service”) are supplied by Fresco News, Inc. (“Fresco”, “us” or “we”) subject to your agreement to and compliance with the conditions set forth in this Terms and Conditions Agreement (the “Agreement”). By creating an account to use the Service or otherwise entering into this Agreement, you are creating a binding contract with us. We may revise or update this Agreement by posting an amended version through the Service and making you aware of the revisions. Your use of the Service following an update to this Agreement (or other acceptance method) is considered acceptance of the updated Agreement. If you do not accept the changes, you must stop using the Service.
+
+					LICENSE
+
+					As long as you are in compliance with the conditions of this Agreement and all incorporated documents, we hereby grant you a limited, revocable, non-assignable, non-transferrable, non-sublicensable, non-commercial, non-exclusive license to use and access the Service only on your computing device for personal use. No rights not explicitly listed are granted.
+
+					INCORPORATED TERMS
+
+					The following additional terms are incorporated into this Agreement as if fully set forth herein:
+					1. Privacy Policy
+					2. Copyright Policy
+					3. Complaint Policy (including Privacy and Trademark)
+
+					DISCLAIMERS
+
+					The Service allows its users and third-parties to post content and materials, which we do not review, control or endorse. You agree that we are not responsible for any content, advice or other materials appearing on or through the Service. We do not investigate or perform background checks on users of the Services. It is up to you to ensure your own safety in your interactions with other users of the Services and in your activities conducted in connection with the Service. Some users may request that you engage in certain activities, and if you choose to do so, such activities are at your absolute sole risk. You understand and agree that we are not responsible for any damage, injury, death or harm you may suffer as a result of your activities in response to solicitations on the Service.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END #HSA-VIEW -->
+
+
+</div> <!-- END #MODAL-VIEW -->
+
+	<script type="text/javascript" src="public/vendor/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="public/vendor/velocity/velocity.min.js"></script>
+	<script type="text/javascript" src="public/javascripts/slick.min.js"></script>
+	<script type="text/javascript" src="public/vendor/html5-history-api/history.js"></script>
+	<script type="text/javascript" src="public/javascripts/components/landing-gallery.js"></script>
+	<script src="public/javascripts/index.js"></script>
+
 </body>
 </html>
