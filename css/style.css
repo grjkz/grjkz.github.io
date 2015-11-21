@@ -28,34 +28,6 @@ background-image: url(http://www.transparenttextures.com/patterns/binding-dark.p
 
 /**
  
- * NAV BAR
- 
- */
-header {
-	z-index: 99;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: auto;
-	text-align: center;
-	background-color: rgb(240,240,240);
-	box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.52);
-	/*background: radial-gradient(ellipse, rgba(0,0,0,0), rgba(0,99,99,0.5));*/
-}
-
-header li {
-	display: inline;
-	margin: 0px 15px 0px 15px;
-	text-align: center;
-	font-size: 1.3em;
-}
-
-ul {
-	list-style-type: none;
-}
-
-/**
- 
  * GENERAL
  
  */
@@ -69,10 +41,8 @@ a:hover {
 	color: darkblue;
 }
 
-
-i {
-	font-size: 2em !important;
-	margin: 0 0.2em;
+ul {
+	list-style-type: none;
 }
 
 h1 {
@@ -81,13 +51,18 @@ h1 {
 
 h3 {
 	color: darkblue;
-	text-align: left;
+	text-align: center;
+}
+
+i {
+	font-size: 2em !important;
+	margin: 0 0.2em;
 }
 
 .v-align {
-	position:relative;
-	top: 40%;
-	transform: translateY(-50%);
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .center { 
@@ -105,8 +80,10 @@ h3 {
 
 .section, .section2 {
 	padding: 5% 0;
-	height: 100%;
+	min-height: 100%;
+	width: 100%;
 	position: relative;
+	display: table;
 }
 
 .section2 {
@@ -119,15 +96,40 @@ h3 {
 
 /**
  
+ * NAV BAR
+ 
+ */
+header {
+	z-index: 50;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: rgb(240,240,240);
+	box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.52);
+	/*background: radial-gradient(ellipse, rgba(0,0,0,0), rgba(0,99,99,0.5));*/
+}
+
+header li {
+	display: inline;
+	margin: 0px 15px 0px 15px;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+header ul {
+	padding-left: 0;
+}
+
+/**
+ 
  * TOP SECTION
  
  */
 
 .profile {
-	position: absolute;
-	top: 43%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	text-align: center;
 }
 
 img.profilePic {
@@ -142,6 +144,10 @@ img.profilePic {
  * ABOUT ME SECTION
  
  */
+
+.about-me {
+	
+}
 
 .articles {
 	clear: both;
@@ -161,12 +167,15 @@ article {
  
  */
 
-.project {
-	
+.projects {
+	width: 100%;
+	/*height: initial;*/
+	/*min-height: 100%;*/
 }
 
 .project-name {
-	text-align: center;
+	/*text-align: center;*/
+	color: darkblue;
 }
 
 .project-details {
@@ -194,6 +203,7 @@ article {
 .fresco-news * {
 	font-family: Nota, sans-serif;
 	font-size: 18px;
+	line-height: 20px;
 }
 
 .ph4zergame * {
@@ -220,6 +230,12 @@ article {
 		width: 100%;
 		display: block;
 	}
+
+	.project-details a {
+		display: block;
+    text-align: center;
+    margin-top: 18px;
+	}
 }
 
 /** 
@@ -231,5 +247,5 @@ article {
 .contact {
 	text-align: center;
 	font-size: 1.5em;
-	height: initial;
+	min-height: initial;
 }

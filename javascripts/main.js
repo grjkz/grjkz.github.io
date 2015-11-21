@@ -23,7 +23,7 @@ $(function() {
 	 */
 	
 	$('.project-name').click(function() {
-		var targetProjectDetails = $(this).next('.project-details');
+		var targetProjectDetails = $( $(this).data('target') );
 		var allProjectDetails = $('.project-details');
 		
 		if (targetProjectDetails.css('display') === "none") {
