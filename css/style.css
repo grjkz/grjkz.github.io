@@ -21,6 +21,11 @@ background-image: url(http://www.transparenttextures.com/patterns/binding-dark.p
 	font-family: georgia;
 }
 
+/**
+ 
+ * NAV BAR
+ 
+ */
 header {
 	z-index: 99;
 	position: fixed;
@@ -44,9 +49,59 @@ ul {
 	list-style-type: none;
 }
 
+/**
+ 
+ * GENERAL
+ 
+ */
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darkblue;
+}
+
+
+i {
+	font-size: 2em !important;
+	margin: 0 0.2em;
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	color: darkblue;
+	text-align: left;
+}
+
+.v-align {
+	position:relative;
+	top: 40%;
+	transform: translateY(-50%);
+}
+
+.center { 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.navy {
+	color: navy;
+}
+
 .section, .section2 {
 	padding: 5% 0;
 	height: 100%;
+	position: relative;
 }
 
 .section2 {
@@ -57,10 +112,11 @@ ul {
 	/*background-color: rgba(122, 245, 245,0.4);*/
 }
 
-.home {
-	height: 100%;
-	position: relative;
-}
+/**
+ 
+ * TOP SECTION
+ 
+ */
 
 .profile {
 	position: absolute;
@@ -76,6 +132,12 @@ img.profilePic {
 	display:block;
 }
 
+/** 
+ 
+ * ABOUT ME SECTION
+ 
+ */
+
 .articles {
 	clear: both;
 	color: black;
@@ -88,36 +150,11 @@ article {
 	width:60%;
 }
 
-.contact {
-	text-align: center;
-	font-size: 1.5em;
-	height: initial;
-}
-
-i {
-	font-size: 2em !important;
-	margin: 0 0.2em;
-}
-
-h1 {
-	text-align: center;
-	/*color: #009999;*/
-}
-
-h2 {
-	/*color: #009999;*/
-}
-
-h3 {
-	color: darkblue;
-	text-align: left;
-}
-
-.v-align {
-	position:relative;
-	top: 40%;
-	transform: translateY(-50%);
-}
+/**
+ 
+ * PROJECTS SECTION
+ 
+ */
 
 .project {
 	width: 80%;
@@ -133,7 +170,8 @@ h3 {
 	display: none;
 }
 
-.project-details .thumbnail, .description {
+.project-details .thumbnail, 
+.description {
 	width: 49%;
 	display: inline-block;
 	vertical-align: middle;
@@ -147,12 +185,6 @@ h3 {
 	width:100%;
 }
 
-@media only screen and (max-device-width: 600px), (max-width: 600px) {
-	.project-details .thumbnail, .description {
-		width: 100%;
-		display: block;
-	}	
-}
 
 .ph4zergame * {
 	font-family: 'VT323', monospace;
@@ -172,27 +204,22 @@ h3 {
 	font-family: 'Lora', serif;
 }
 
-p {
-
+@media only screen and (max-device-width: 600px), (max-width: 600px) {
+	.project-details .thumbnail, 
+	.description {
+		width: 100%;
+		display: block;
+	}
 }
 
-.center { 
-	margin-left: auto;
-	margin-right: auto;
-}
+/** 
+ 
+ * CONTACT SECTION
+ 
+ */
 
-.center-text {
+.contact {
 	text-align: center;
-}
-a {
-	color: blue;
-	text-decoration: none;
-}
-
-a:hover {
-	color: red;
-}
-
-.navy {
-	color: navy;
+	font-size: 1.5em;
+	height: initial;
 }
