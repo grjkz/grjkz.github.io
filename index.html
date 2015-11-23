@@ -205,7 +205,27 @@
 	
 	<div id="contact" class='contact section2'>
 		<p>Get in Touch:</p>
-		<a href="mailto:philipchoicodes@gmail.com"><i class="mdi mdi-email"></i></a>
+		<div class="email-me-wrapper">
+			<a id="contact-me" href=""><i class="mdi mdi-email"></i></a>
+			
+				<div id="contact-card">
+					<div class="contact-header">
+						<b>Purpose of Email:</b>
+						<span><i class="mdi mdi-close clickable" onclick="closeModal('#contact-card')"></i></span>
+					</div>					
+					<div class="contact-form">
+						<select id="contact-purpose">
+							<option value="Job Opportunity">Job Opportunity</option>
+							<option value="Inquiry">Inquiry</option>
+							<option value="Other">Other</option>
+						</select>
+
+						<a id="send-email" href="">CREATE EMAIL</a>
+					</div>
+				</div>
+			
+
+		</div>
 		<a href="https://github.com/grjkz" target='#'><i class="mdi mdi-github-circle"></i></a>
 		<a href="https://www.linkedin.com/in/philipchoicodes" target='#'><i class="mdi mdi-linkedin-box"></i></a>
 	</div>
@@ -213,7 +233,7 @@
 	<footer>
 			
 	</footer>
-
+	
 <script src="bower/jquery/dist/jquery.min.js"></script>
 <script src="bower/velocity/velocity.min.js"></script>
 <script src="javascripts/main.js"></script>

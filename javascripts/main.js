@@ -53,7 +53,58 @@ $(function() {
 	});
 
 
+	/**
+	 
+	 * Open #contact-card on click
+	 
+	 */
+	
+	$('#contact-me').click(function(e) {
+		e.preventDefault();
 
+		var contactCard = $('#contact-card');
+		contactCard.velocity({ 
+			top: '-90px', 
+			opacity: 1 
+		}, { 
+			duration: 200,
+			display: 'block'
+		});
+	});
+
+		
+	/**
+	 
+	 * Contact Email Builder
+	 
+	 */
+	
+	$('#send-email').click(function() {
+		var mailto = "philipchoicodes@gmail.com";
+		var subject = $('#contact-purpose').val();
+
+		this.href = "mailto:" + mailto + "?subject=GH::Purpose: " + subject;
+	});
+
+	
 
 
 });
+
+
+/**
+ 
+ * Closing modals
+ * @param  {string} targetHash Target node hash to close
+ 
+ */
+
+function closeModal(targetHash) {
+	$(targetHash).velocity({
+		top: '0',
+		opacity: 0
+	}, {
+		duration: 200,
+		display: 'none'
+	});
+}
