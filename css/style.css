@@ -89,9 +89,6 @@ i {
 .section2 {
 	box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.52);
 	background-color: rgba(240,240,240,1);
-	/*background-color: rgba(142,206,142,1);*/
-	/*background-color: rgba(183,110,184,0.7);*/
-	/*background-color: rgba(122, 245, 245,0.4);*/
 }
 
 /**
@@ -135,13 +132,11 @@ header ul {
 
 img.profilePic {
 	width: 300px;
-	/*height: 336px;*/
 	border-radius: 25px;
-	/*border-style: ridge;*/
-	/*display:block;*/
 }
 
 .card-flip {
+	/* make sure the height and width match the images placed inside */
 	width: 300px;
 	height: 336px;
 	position: relative;
@@ -202,12 +197,9 @@ article {
 
 .projects {
 	width: 100%;
-	/*height: initial;*/
-	/*min-height: 100%;*/
 }
 
 .project-name {
-	/*text-align: center;*/
 	color: darkblue;
 }
 
