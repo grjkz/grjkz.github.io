@@ -19,7 +19,7 @@ html,body {
 body {
 	margin: 0;
 	background-color: #ffffff;
-background-image: url(/public/images/crossword.png);
+background-image: url(/img/crossword.png);
 	/*background: url(../img/light-wool-1920x1080.png);*/
 	/*background-size: cover;*/
 	background-attachment: fixed;
