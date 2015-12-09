@@ -19,7 +19,7 @@ html,body {
 body {
 	margin: 0;
 	background-color: #ffffff;
-background-image: url(/img/crossword.png);
+	background-image: url(/img/crossword.png);
 	/*background: url(../img/light-wool-1920x1080.png);*/
 	/*background-size: cover;*/
 	background-attachment: fixed;
@@ -87,8 +87,22 @@ i {
 }
 
 .section2 {
-	box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.52);
-	background-color: rgba(240,240,240,1);
+	/*box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.52);
+	background-color: rgba(240,240,240,1);*/
+  box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.22);
+  background-color: rgba(240,240,240,0.3);
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clear-float {
+	clear: both;
 }
 
 /**
@@ -187,6 +201,29 @@ img.profilePic {
 
 article {
 	width:60%;
+}
+.tech-list {
+	width: 50%;
+}
+
+.tech-list > ul {
+	/*list-style: initial;*/
+	padding-left: 11px;
+}
+
+.tech-list > ul > li {
+	position: relative;
+}
+
+.tech-list > ul > li:before {
+	position: absolute;
+	content: " ";
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-left: 5px solid black;
+	top: 4px;
+	left: -10px;
 }
 
 /**
