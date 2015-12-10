@@ -1,3 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Bentham);
+@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps);
+
 @font-face {
 	font-family: Nota;
 	font-weight: 600;
@@ -72,10 +80,6 @@ i {
 	text-align: center;
 }
 
-.navy {
-	color: navy;
-}
-
 .section, .section2 {
 	padding: 5% 0;
 	min-height: 100%;
@@ -91,6 +95,11 @@ i {
 	background-color: rgba(240,240,240,1);*/
   box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.22);
   background-color: rgba(240,240,240,0.3);
+}
+
+.section-header {
+	font-family: "Indie Flower", sans-serif;
+	font-size: 40px;
 }
 
 .float-left {
@@ -122,6 +131,10 @@ header {
 	box-shadow: 0px 0px 13px 4px rgba(0,0,0,0.52);
 }
 
+header ul {
+	padding-left: 0;
+}
+
 header li {
 	display: inline;
 	margin: 0px 15px 0px 15px;
@@ -130,9 +143,10 @@ header li {
   text-shadow: 0px 2px 2px rgba(0,0,0,0.1);
 }
 
-header ul {
-	padding-left: 0;
+header a {
+	font-family: "Indie Flower", sans-serif;
 }
+
 
 /**
  
@@ -142,6 +156,11 @@ header ul {
 
 .profile {
 	
+}
+
+.my-name {
+	font-family: "Bilbo Swash Caps", cursive;
+	font-size: 48px;
 }
 
 img.profilePic {
@@ -181,14 +200,20 @@ img.profilePic {
 	transform: rotateY(180deg);
 }
 
+.my-doings {
+	color: navy;
+	font-family: "Lora", sans-serif;
+	font-size: 21px;
+}
+
 /** 
  
  * ABOUT ME SECTION
  
  */
 
-.about-me {
-	
+.about-me h1 {
+	font-family: "Indie Flower", sans-serif;
 }
 
 .articles {
@@ -321,8 +346,11 @@ article {
 .contact {
 	padding: 0px 0px 48px;
 	text-align: center;
-	font-size: 24px;
 	min-height: initial;
+}
+
+.contact .section-header {
+	font-size: 32px;
 }
 
 .contact i {
