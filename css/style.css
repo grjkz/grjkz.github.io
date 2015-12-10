@@ -203,7 +203,7 @@ article {
 	width:60%;
 }
 .tech-list {
-	width: 50%;
+	width: 33%;
 	margin-bottom: 12px;
 }
 
@@ -214,7 +214,7 @@ article {
 
 .tech-list > ul {
 	padding-left: 11px;
-  width: inherit;
+  /*width: inherit;*/
   margin: 0 auto;
 }
 
