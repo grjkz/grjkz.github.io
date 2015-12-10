@@ -1,0 +1,25 @@
+{
+  "name": "Philip Choi",
+  "homepage": "https://github.com/grjkz/grjkz.github.io",
+  "authors": [
+    "Philip Choi <grjkz0@gmail.com>"
+  ],
+  "description": "My Website",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "velocity": "~1.2.3",
+    "mdi": "~1.3.41",
+    "slick-carousel": "~1.5.9"
+  }
+}

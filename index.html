@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bower/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="bower/slick-carousel/slick/slick-theme.css">
 	<link rel="stylesheet" href="bower/mdi/css/materialdesignicons.min.css">
 	<link href="css/style.css" rel="stylesheet">
 	<title>Philip Choi</title>
@@ -21,8 +23,8 @@
 
 	<div id="top" class="home section">
 		<div class="profile center-block">
-			<h1 class='my-name'>Philip Choi</h1>
 
+			<h1 class='my-name'>Philip Choi</h1>
 			<div class="profile-images center clickable card-flip">	
 				<div class="card-front">
 					<img class="profilePic" src="img/profile_pic.jpg">
@@ -31,8 +33,8 @@
 					<img class="profilePic" src="img/profile_pic_archery.jpg">
 				</div>
 			</div>
-			
 			<h2 class='my-doings'>Web Developer | DIY | Gamer | Archer</h2>
+
 		</div>
 	</div>
 	
@@ -101,130 +103,135 @@
 	<div id="projects" class="projects section">
 		<div class="center-block">
 		<h1 class="section-header">Projects</h1>
-			
-			<div class="project">
-				<h3><span class='project-name clickable' data-target='.project-details.fresco-news'>Fresco News</span></h3>
-				<div class="project-details fresco-news">
-					<div class="thumbnail">
-						<img src="img/fresco_thumb.png" alt="Fresco News">
-					</div>
-					<div class="description">
-						<a href="projects/fresco/index.html" target='#'>Check it out!</a>
-						<p>
-							A landing page I created for Fresco News. It includes a nested carousel for images and articles. Supports IE8+ history API, enabling backward and forward SPA browser navigation for those with trigger-happy fingers. Velocity.js is used for many of the animations and media querying. It is also responsive for small devices.
-							<br><br>	
-							<span class='tip'>Try scrolling after opening the "Tryout Fresco News" card in "News Dashboard"<span>
-							<p>
-								Technology Used:
-								<ul>
-									<li>Slick</li>
-									<li>Velocity</li>
-									<li>html5-history-api</li>
-									<li>jQuery</li>
-								</ul>
-							</p>
-						</p>
-					</div>
-				</div>
+
+		<div class="projects-wrapper">
+				
+			<div class="prev-project">
+				<i class="mdi mdi-arrow-left-bold-hexagon-outline"></i>
 			</div>
 
-			<div class="project">
-				<h3><span class='project-name clickable' data-target='.project-details.ph4zergame'>ph4zerGame</span></h3>
-				<div class="project-details ph4zergame">
-					<div class="thumbnail">
-						<img src="img/ph4zer_thumb.png" alt="ph4zerGame">
-					</div>
-					<div class="description">
-						<a href="http://104.131.39.151:3001" target='#'>Check it out!</a>
-						<p>
-							Multiplayer 2D shooter game for the browser. Try it out against your friend. It's still a work in progress.
+			<div class="projects-carousel">
+
+				<div class="project">
+					<h3><span class='project-name clickable' data-target='.project-details.fresco-news'>Fresco News</span></h3>
+					<div class="project-details fresco-news">
+						<div class="thumbnail">
+							<img src="img/fresco_thumb.png" alt="Fresco News">
+						</div>
+						<div class="description">
+							<a href="projects/fresco/index.html" target='#'>Check it out!</a>
 							<p>
-								Technology Used:
-								<ul>
-									<li>Phaser.js</li>
-									<li>Socket.io</li>
-									<li>jQuery</li>
-								</ul>
+								A landing page I created for Fresco News. It includes a nested carousel for images and articles. Supports IE8+ history API, enabling backward and forward SPA browser navigation for those with trigger-happy fingers. Velocity.js is used for many of the animations and media querying. It is also responsive for small devices.
+								<br><br>	
+								<span class='tip'>Try scrolling after opening the "Tryout Fresco News" card in "News Dashboard"</span>
 							</p>
-						</p>
+							<p>Technology Used:</p>
+							<ul>
+								<li>Slick</li>
+								<li>Velocity</li>
+								<li>html5-history-api</li>
+								<li>jQuery</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-	
-			<div class="project">
-				<h3><span class='project-name clickable' data-target='.project-details.absurdnyc'>Absurd NYC</span></h3>
-				<div class="project-details absurdnyc">
-					<div class="thumbnail">
-						<img src="img/absurd_thumb.png" alt="Absurd NYC">
+
+				<div class="project">
+					<h3><span class='project-name clickable' data-target='.project-details.ph4zergame'>ph4zerGame</span></h3>
+					<div class="project-details ph4zergame">
+						<div class="thumbnail">
+							<img src="img/ph4zer_thumb.png" alt="ph4zerGame">
+						</div>
+						<div class="description">
+							<a href="http://104.131.39.151:3001" target='#'>Check it out!</a>
+							<p>
+								Multiplayer 2D shooter game for the browser. Try it out against your friend. It's still a work in progress.
+							</p>
+							<p>Technology Used:</p>
+							<ul>
+								<li>Phaser.js</li>
+								<li>Socket.io</li>
+								<li>jQuery</li>
+							</ul>
+						</div>
 					</div>
-					<div class="description">
-						<a href="https://guarded-coast-3610.herokuapp.com" target="#">Check it out!</a>
+				</div>
+		
+				<div class="project">
+					<h3><span class='project-name clickable' data-target='.project-details.absurdnyc'>Absurd NYC</span></h3>
+					<div class="project-details absurdnyc">
+						<div class="thumbnail">
+							<img src="img/absurd_thumb.png" alt="Absurd NYC">
+						</div>
+						<div class="description">
+							<a href="https://guarded-coast-3610.herokuapp.com" target="#">Check it out!</a>
+							<p>
+								Absurd NYC is a 4 person group project that uses NYC stereotypes to dynamically deliver a "story" or perhaps a real adventure for one to use as a guide to explore NYC. 
+							</p>
+							<p>Technology Used:</p>
+							<ul>
+								<li>Ruby on Rails</li>
+								<li>JQuery</li>
+								<li>PostgreSQL</li>
+								<li>Yelp API</li>
+								<li>Instagram API</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 						
-						<p>
-							Absurd NYC is a 4 person group project that uses NYC stereotypes to dynamically deliver a "story" or perhaps a real adventure for one to use as a guide to explore NYC. 
+				<div class="project">
+					<h3><span class='project-name clickable' data-target='.project-details.thebasement'>The Basement</span></h3>
+					<div class="project-details thebasement">
+						<div class="thumbnail">
+							<img src="img/basement_thumb.png" alt="The Basement">
+						</div>
+						<div class="description">
+							<a href="http://104.131.39.151:3000" target='#'>Check it out!</a>
 							<p>
-								Technology Used:
-								<ul>
-									<li>Ruby on Rails</li>
-									<li>JQuery</li>
-									<li>PostgreSQL</li>
-									<li>Yelp API</li>
-									<li>Instagram API</li>
-								</ul>
+								This forum project was built as a solo project with a game theme. It's a basic forum that allows users to post messages and engage in conversations while up or downvoting message topics. It also includes user sessions so only registered members are able to POST.
 							</p>
-						</p>
+							<p>Technology Used:</p>
+							<ul>
+								<li>Node.js</li>
+								<li>Express</li>
+								<li>SQLite3</li>
+								<li>EJS npm</li>
+								<li>JQuery</li>
+								<li>Foundation.css</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-					
-			<div class="project">
-				<h3><span class='project-name clickable' data-target='.project-details.thebasement'>The Basement</span></h3>
-				<div class="project-details thebasement">
-					<div class="thumbnail">
-						<img src="img/basement_thumb.png" alt="The Basement">
-					</div>
-					<div class="description">
-						<a href="http://104.131.39.151:3000" target='#'>Check it out!</a>
-						<p>
-							This forum project was built as a solo project with a game theme. It's a basic forum that allows users to post messages and engage in conversations while up or downvoting message topics. It also includes user sessions so only registered members are able to POST.
+
+				<div class="project">
+					<h3><span class='project-name clickable' data-target='.project-details.blackjack'>Blackjack</span></h3>
+					<div class="project-details blackjack">
+						<div class="thumbnail">
+							<img src="img/bj_thumb.png" alt="BlackJack">
+						</div>
+						<div class="description">
+							<a href="blackjack.html" target='#'>Check it out!</a>
 							<p>
-								Technology Used:
-								<ul>
-									<li>Node.js</li>
-									<li>Express</li>
-									<li>SQLite3</li>
-									<li>EJS npm</li>
-									<li>JQuery</li>
-									<li>Foundation.css</li>
-								</ul>
+								This Blackjack game is created for the enjoyment of those who like fast paced games. It includes animate.css for use as cues for quick players that don't especially enjoy reading while earning lots of dough. This version of Blackjack enables the player to split one time.
 							</p>
-						</p>
+							<p>Technology Used:</p>
+							<ul>
+								<li>JQuery</li>
+								<li>Foundation.css</li>
+								<li>Animate.css</li>
+							</ul>
+						</div>
 					</div>
 				</div>
+
+			</div> <!-- end projects-carousel -->
+
+			<div class="next-project">
+				<i class="mdi mdi-arrow-right-bold-hexagon-outline"></i>
 			</div>
 
-			<div class="project">
-				<h3><span class='project-name clickable' data-target='.project-details.blackjack'>Blackjack</span></h3>
-				<div class="project-details blackjack">
-					<div class="thumbnail">
-						<img src="img/bj_thumb.png" alt="BlackJack">
-					</div>
-					<div class="description">
-						<a href="blackjack.html" target='#'>Check it out!</a>
-						<p>
-							This Blackjack game is created for the enjoyment of those who like fast paced games. It includes animate.css for use as cues for quick players that don't especially enjoy reading while earning lots of dough. This version of Blackjack enables the player to split one time.
-							<p>
-								Technology Used:
-								<ul>
-									<li>JQuery</li>
-									<li>Foundation.css</li>
-									<li>Animate.css</li>
-								</ul>
-							</p>
-						</p>
-					</div>
-				</div>
-			</div>
+			</div> <!-- end projects-wrapper -->
 
 		</div> <!-- end center-block -->
 	</div> <!-- end #projects -->
@@ -238,11 +245,11 @@
 			<div class="email-me-wrapper">
 				<a id="contact-me" href=""><i class="mdi mdi-email"></i></a>
 					<div id="contact-card">
-						<div class="contact-header">
+						<div class="contact-card-header">
 							<b>Purpose of Email:</b>
 							<span><i class="mdi mdi-close clickable" onclick="closeModal('#contact-card')"></i></span>
 						</div>					
-						<div class="contact-form">
+						<div class="contact-card-form">
 							<select id="contact-purpose">
 								<option value="Job Opportunity">Job Opportunity</option>
 								<option value="Inquiry">Inquiry</option>
@@ -260,11 +267,9 @@
 		</div>
 	</div>
 	
-	<footer>
-			
-	</footer>
 	
 <script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="bower/slick-carousel/slick/slick.min.js"></script>
 <script src="bower/velocity/velocity.min.js"></script>
 <script src="javascripts/main.js"></script>
 </body>

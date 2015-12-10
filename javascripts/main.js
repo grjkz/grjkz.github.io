@@ -39,18 +39,32 @@ $(function() {
 	 
 	 */
 	
-	$('.project-name').click(function() {
-		var targetProjectDetails = $( $(this).data('target') );
-		var allProjectDetails = $('.project-details');
+	// $('.project-name').click(function() {
+	// 	var targetProjectDetails = $( $(this).data('target') );
+	// 	var allProjectDetails = $('.project-details');
 		
-		if (targetProjectDetails.css('display') === "none") {
-			allProjectDetails.velocity('slideUp', 200);
-			targetProjectDetails.velocity('slideDown', 200);
-		}
-		else {
-			targetProjectDetails.velocity('slideUp', 200);
-		}
+	// 	if (targetProjectDetails.css('display') === "none") {
+	// 		allProjectDetails.velocity('slideUp', 200);
+	// 		targetProjectDetails.velocity('slideDown', 200);
+	// 	}
+	// 	else {
+	// 		targetProjectDetails.velocity('slideUp', 200);
+	// 	}
+	// });
+	
+	/**
+	 * Slick for Projects
+	 */
+	$('.projects-carousel').slick({
+		dots: false,
+		autoplay: true,
+		prevArrow: $('.prev-project'),
+		nextArrow: $('.next-project')
 	});
+
+	// $('.next-article').click(function(e) {
+	// 	$('.articles').slick('slickNext');
+	// });
 
 
 	/**
