@@ -458,6 +458,10 @@ nav .logo {
 
 */
 
+#highlights {
+	display: none;
+}
+
 .card > * {
 	height: 100%;
 	display: inline-block;

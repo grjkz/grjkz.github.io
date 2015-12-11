@@ -46,6 +46,7 @@ var initialize = {
 					
 					// when all articles have been appended, start slick on #highlights
 					if (count >= results.data.length) {
+						$('highlights').show();
 						slick.articlesStart();
 						slick.enableCopyLink();
 					}
