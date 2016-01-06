@@ -282,7 +282,7 @@ article {
 .prev-project,
 .next-project {
 	position: absolute;
-	width: 5%;
+	/*width: 5%;*/
 	/*float:left;*/
 	font-size: 36px;
 	top: 50%;
@@ -355,8 +355,8 @@ article {
 }
 
 @media only screen and (max-device-width: 600px), (max-width: 600px) {
-	.project-details .thumbnail, 
-	.description {
+	.project-details .thumbnail,
+	.project-details .description {
 		width: 100%;
 		display: block;
 	}
