@@ -137,7 +137,7 @@ header ul {
 }
 
 header li {
-	display: inline;
+	display: inline-block;
 	margin: 0px 15px 0px 15px;
 	text-align: center;
 	font-size: 20px;
@@ -205,6 +205,12 @@ img.profilePic {
 	color: navy;
 	font-family: "Lora", sans-serif;
 	font-size: 21px;
+}
+
+@media only screen and (max-device-width: 320px), (max-width: 320px) {
+	.my-doings {
+		text-align: center;
+	}
 }
 
 /** 
@@ -365,6 +371,18 @@ article {
 		display: block;
     text-align: center;
     margin-top: 18px;
+	}
+}
+
+@media only screen and (max-device-width: 320px), (max-width: 320px) {
+	.tech-list {
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+	.project-details .description {
+		width: 92%;
+		margin: 0 auto;
 	}
 }
 
