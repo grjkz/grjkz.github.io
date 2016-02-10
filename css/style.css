@@ -5,6 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps);
+@import url(https://fonts.googleapis.com/css?family=Poppins:600);
 
 @font-face {
 	font-family: Nota;
@@ -160,8 +161,8 @@ header a {
 }
 
 .my-name {
-	font-family: "Bilbo Swash Caps", cursive;
-	font-size: 48px;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
 }
 
 img.profilePic {
@@ -221,6 +222,7 @@ img.profilePic {
 
 .about-me h1 {
 	font-family: "Indie Flower", sans-serif;
+	font-size: 28px;
 }
 
 .articles {
