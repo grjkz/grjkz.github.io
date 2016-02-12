@@ -3,12 +3,7 @@ body {
 	background-image: url("../img/table.jpg");
 }
 
-.hit,.stand,.double {
-	margin: 10%;
-}
-
 .split {
-	margin: 10%;
 	visibility: hidden;
 }
 
@@ -36,9 +31,8 @@ body {
 }
 
 .dealArea {
-	height: 150px;
+	min-height: 150px;
 	border: solid 1px white;
-	display; inline-block;
 }
 
 .largeRow {
@@ -53,24 +47,33 @@ body {
 	min-height: 2em;
 }
 
+.playerBank {
+	text-align: center;
+}
+
 .bank, .bankWord {
 	margin-top: 5px;
 	margin-right: 10px;
 	color: orange;
-
 }
-.betButton, .betAmt {
 
+.betButton, .betAmt {
+	text-align: center;
+}
+
+.hit,
+.double,
+.split,
+.stand {
+	width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .smallImg {
 	position: relative;
-	max-height: 85%;
+	max-height: 128px;
 	margin: 10px;
-}
-
-.playerHand {
-
 }
 
 .sitDownContent {
@@ -103,7 +106,6 @@ body {
 	background-color: rgba(0,0,0,.5);
 }
 
-
 .submitBankAmt {
 	margin: 5% 0;
 	font-size: 2em;
@@ -112,4 +114,8 @@ body {
 
 .red {
 	border: solid 3px red;
+}
+
+#swapSides {
+	float: right;
 }
