@@ -1,17 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
-@import url(https://fonts.googleapis.com/css?family=Lora);
-@import url(https://fonts.googleapis.com/css?family=Bentham);
-@import url(https://fonts.googleapis.com/css?family=VT323);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps);
-@import url(https://fonts.googleapis.com/css?family=Poppins:600);
-
-@font-face {
-	font-family: Nota;
-	font-weight: 600;
-	src: url("../fonts/Nota-BoldWeb.woff") format('woff');
-}
 
 * {
 	font-family: 'PT Sans', sans-serif;
@@ -30,10 +19,7 @@ body {
 	margin: 0;
 	background-color: #ffffff;
 	background-image: url(/img/crossword.png);
-	/*background: url(../img/light-wool-1920x1080.png);*/
-	/*background-size: cover;*/
 	background-attachment: fixed;
-	font-family: georgia;
 }
 
 /**
@@ -177,15 +163,6 @@ img.profilePic {
 	position: relative;
 }
 
-/*both images rotate when '.flipped' is added to '.card-flip'*/
-.card-flip.flipped .card-front {
-	transform: rotateY(180deg);
-}
-
-.card-flip.flipped .card-back {
-	transform: rotateY(0);
-}
-
 .card-front,
 .card-back {
 	overflow: hidden;
@@ -202,9 +179,18 @@ img.profilePic {
 	transform: rotateY(180deg);
 }
 
+/*takes effect when '.flipped' is added to '.card-flip'*/
+.card-flip.flipped .card-front {
+	transform: rotateY(180deg);
+}
+
+.card-flip.flipped .card-back {
+	transform: rotateY(0);
+}
+
 .my-doings {
 	color: navy;
-	font-family: "Lora", sans-serif;
+	font-family: initial;
 	font-size: 21px;
 }
 
@@ -311,32 +297,9 @@ article {
 	color: darkblue;
 }
 
-.fresco-news * {
-	font-family: Nota, sans-serif;
-	font-size: 18px;
-	line-height: 20px;
-}
-
-.ph4zergame * {
-	font-family: 'VT323', monospace;
-	font-size: 26px;
-}
-
-.absurdnyc * {
-	font-family: 'Raleway', sans-serif;
-}
-
-.thebasement * {
-	font-family: 'Bentham', serif;
-	font-size: 19px;
-}
-
-.blackjack * {
-	font-family: 'Lora', serif;
-}
-
 .project-details {
 	/*display: none;*/
+	font-family: 'Raleway', sans-serif;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
