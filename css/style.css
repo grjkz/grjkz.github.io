@@ -316,6 +316,11 @@ article {
 	padding-left: 1%;
 }
 
+.thumbnail {
+	max-height: 450px;
+	overflow-y: scroll;
+}
+
 .project-details img {
 	width:100%;
 	box-shadow: -1px 2px 5px rgba(0,0,0,0.2);
