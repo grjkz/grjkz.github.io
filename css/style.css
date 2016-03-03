@@ -354,6 +354,10 @@ article {
 		margin-bottom: 24px;
 	}
 
+	.thumbnail {
+		max-height: 300px;
+	}
+
 	.project-details .description {
 		width: 92%;
 		margin: 0 auto;
